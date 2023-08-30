@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/icono-trabajo-removebg-preview.png" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Meta etiquetas para vista previa -->
+    <meta property="og:title" content="Portafolio Jonathan">
+    <meta property="og:image" content="https://res.cloudinary.com/duhosfky2/image/upload/v1693426311/Market/zogoqmeys3yfz02bowl5.jpg">
+    <meta name="description" content="Mi portafolio personal para mostrar mis proyectos y habilidades.">
+    <!-- <meta property="og:url" content="https://portfolio-andy.vercel.app/"> -->
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jonathan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://res.cloudinary.com/duhosfky2/image/upload/v1693414613/Market/d3zuab3ajsv0k1inw5ec.jpg" alt="Jonathan Fernandez">
+            </div>
+            <h1>Jonathan Fernandez</h1>
+            <h2>Full Stack web developer</h2>
+            <div class="redes">
+                <a href="https://github.com/JonnyFernandez" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-fernandez-65a959277/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jonathan Fernandez.</span> <br> 
+                Apasionado programador web y estudiante de ingeniería química en su último año. 
+                Mi trayectoria única me ha brindado una combinación inigualable de habilidades técnicas y capacidades interpersonales.</p>
+                <!-- <br> -->
+                <p>Con una sólida base en ingeniería química, he demostrado mi capacidad para abordar desafíos complejos con creatividad y soluciones innovadoras. 
+                    Mi experiencia en atención al cliente ha nutrido mi empatía y comunicación efectiva, 
+                    lo que me permite entender las necesidades del usuario final de manera excepcional.
+                </p>
+                <p>
+                    Mi viaje en el desarrollo web me ha llevado a convertirme en un apasionado Full Stack Developer con experiencia en una variedad de tecnologías y herramientas.
+                     Desde el backend hasta el frontend, he trabajado con Node.js, Express y PostgreSQL para construir bases de datos robustas y eficientes. 
+                     Mis habilidades en React y Redux me permiten crear interfaces de usuario dinámicas e intuitivas.
+                </p> 
+                <p>
+                    Además, mi conocimiento en HTML, CSS y JavaScript garantiza que cada aspecto de mis proyectos esté diseñado con precisión y estilo. No solo creo aplicaciones funcionales, 
+                    sino que también me aseguro de que sean visualmente atractivas y altamente usables.
+                </p>  
+                <p>
+                    He trabajado con tecnologías como Nodemailer y pasarelas de pago, lo que demuestra mi capacidad para llevar proyectos completos desde la conceptualización hasta la implementación y más allá. 
+                    Mi experiencia en trabajo en equipo ha sido fundamental en cada etapa del proceso, ya que disfruto colaborando con otros para lograr resultados excepcionales.
+                </p> 
+                <p>
+                    Mi objetivo es fusionar mis habilidades técnicas y mi pasión por la resolución de problemas para crear soluciones web innovadoras y atractivas. 
+                    Si estás buscando a alguien que no solo entienda el código, 
+                    sino también las necesidades de los usuarios y la importancia de la estética, estaré encantado de ser parte de tu equipo.
+                </p>
+                <p> <span>¡Espero con ansias la oportunidad de contribuir a proyectos emocionantes y desafiantes mientras sigo creciendo como Full Stack Developer!</span> </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-08-1987
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 9 221 5047727
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            arcancode@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            La Plata, Buenos Aires, Argentina
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <span class="overlay"></span> 
+                <a href="https://drive.google.com/file/d/18zv0-AI4ETFtZacoYwHxijaZ4YE79S_G/view?usp=sharing" target="_blank" style="text-decoration: none;">
+                    <span style="color: white;">Descargar CV</span>
+                    <i class="fa-solid fa-download" style="color: white;"></i>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Full Stack Web Developer</h4>
+                        <span class="casa">Henry Bootcamp</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Durante el Henry Bootcamp, completé exitosamente un programa intensivo de 700 horas de cursado teórico-práctico en el área de Desarrollo Web Full Stack. Como resultado, adquirí habilidades y conocimientos en una amplia gama de tecnologías y herramientas relevantes para el desarrollo de aplicaciones web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ingeniería quimica</h4>
+                        <span class="casa">Universidad Tecnológia Nacional</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>El camino hacia la solución comienza al reconocer el desafío, un primer paso crucial que nos permite definir el terreno que exploraremos. La planificación de la solución sigue una serie de pasos que trazan la ruta más eficiente hacia nuestro objetivo. Finalmente, llegamos a la etapa de aplicación, donde las ideas cobran vida y las soluciones toman forma, transformando el problema original en una historia de éxito
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Atención al cliente Presencial</h4>
+                        <span class="casa">Distribuidora Los Primos</span>
+                        <span class="fecha">2010 - 2013</span>
+                        <p>Mi experiencia me permitió desarrollar habilidades sólidas en ventas y atención al cliente. Estoy capacitado para identificar las necesidades de los clientes y ofrecer soluciones personalizadas, al tiempo que poseo habilidades de comunicación efectiva para brindar un excelente servicio al cliente en diferentes canales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargado</h4>
+                        <span class="casa">Distribuidora Cloroking</span>
+                        <span class="fecha">2013 - 2023</span>
+                        <p>Atención al cliente, control de stock, preparación de productos y control de procesos quimicos, venta mayorista y logistica, <br>
+                           trabajo en equipo para llegar lo mejor al cliente al mejor precio del mercado
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION PORTFOLIO -->
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://youtu.be/59KQuZE1tBA" target="_blank">
+                        <img src="https://res.cloudinary.com/duhosfky2/image/upload/v1693419732/Market/usyc0wvto7gchkjki0ef.jpg" alt="CineGo">
+                        <div class="overlay">
+                            <h3>Mini-Market</h3>
+                            <p>Desde la comididad de tu casa.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=Hnd9TNMoRcA" target="_blank">
+                    <img src="https://res.cloudinary.com/dmy8dbh1a/image/upload/v1689033568/RickAndMorty_lbuzjm.png" alt="Rick And Morty">
+                    <div class="overlay">
+                        <h3>Rick And Morty</h3>
+                        <p>Explora el multiverso de Rick and Morty.</p>
+                    </div>
+                  </a>
+                </div> -->
+                <div class="proyecto">
+                    <a href="https://youtu.be/STfdhvXOBVQ" target="_blank">
+
+                    <img src="https://res.cloudinary.com/duhosfky2/image/upload/v1693420103/Market/iamvb0fiv9edllgim8vq.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PI-Food</h3>
+                        <p>Recetas para el paladar</p>
+                    </div>
+                </a>
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div>
+            <a id="contacto"> 
+                <h2>CONTACTO</h2>
+            </a>
+        </div>
+        <div class="redes" >
+            <a href="https://github.com/JonnyFernandez" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-fernandez-65a959277/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:arcancode@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
